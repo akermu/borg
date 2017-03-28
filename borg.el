@@ -422,7 +422,7 @@ With a prefix argument pass \"--force\" to \"git submodule\"."
                              (epkg-github-package-p pkg)
                              (epkg-orphaned-package-p pkg)
                              (epkg-gitlab-package-p pkg))
-                         (eieio-oref pkg 'url)
+                         (eieio-oref pkg 'repopage)
                        (eieio-oref pkg 'mirror-url))
                    (read-string "Url: ")))
                current-prefix-arg))
